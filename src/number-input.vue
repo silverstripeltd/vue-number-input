@@ -14,12 +14,15 @@
       class="number-input__button number-input__button--minus"
       type="button"
       tabindex="-1"
+      aria-label="Decrease by 1"
+      aria-describedby="number-input-field"
       :disabled="disabled || readonly || !decreasable"
       @click="decrease"
     />
     <input
       ref="input"
       class="number-input__input"
+      id="number-input-field"
       v-bind="attrs"
       type="number"
       :name="name"
@@ -39,6 +42,8 @@
       class="number-input__button number-input__button--plus"
       type="button"
       tabindex="-1"
+      aria-label="Increase by 1"
+      aria-describedby="number-input-field"
       :disabled="disabled || readonly || !increasable"
       @click="increase"
     />
