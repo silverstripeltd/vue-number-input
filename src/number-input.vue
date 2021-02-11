@@ -20,9 +20,9 @@
       @click="decrease"
     />
     <input
+      id="number-input-field"
       ref="input"
       class="number-input__input"
-      id="number-input-field"
       v-bind="attrs"
       type="number"
       :name="name"
